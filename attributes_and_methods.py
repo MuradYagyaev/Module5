@@ -4,20 +4,20 @@ class House:
         self.numberOfFloors = 10
         self.current_floor = 1
 
-    def get_number_of_floor(self, number):
-        print("Текущий этаж равен", number)
+    def get_number_of_floor(self):
+        print("Текущий этаж равен", self.current_floor)
 
     def go_up_next_floor(self):
         if self.current_floor < self.numberOfFloors:
             self.current_floor += 1
-            self.get_number_of_floor(self.current_floor)
+            self.get_number_of_floor()
         else:
             print("Мы на послденем этаже")
 
     def go_down_next_floor(self):
         if self.current_floor > 1:
             self.current_floor -= 1
-            self.get_number_of_floor(self.current_floor)
+            self.get_number_of_floor()
         else:
             print("Мы на первом этаже")
 
@@ -28,7 +28,7 @@ my_house = House()
 #     print("Текущий этаж равен", i)
 
 print("Поднимаемся по этажам вверх")
-my_house.get_number_of_floor(my_house.current_floor)
+my_house.get_number_of_floor()
 while my_house.current_floor < my_house.numberOfFloors:
     my_house.go_up_next_floor()
 
