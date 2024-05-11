@@ -8,7 +8,7 @@ class House:
         print("Текущий этаж равен", number)
 
     def go_up_next_floor(self):
-        if self.current_floor <= self.numberOfFloors:
+        if self.current_floor < self.numberOfFloors:
             self.current_floor += 1
             self.get_number_of_floor(self.current_floor)
         else:
