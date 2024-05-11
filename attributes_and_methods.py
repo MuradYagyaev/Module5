@@ -15,7 +15,7 @@ class House:
             print("Мы на послденем этаже")
 
     def go_down_next_floor(self):
-        if self.current_floor >= 1:
+        if self.current_floor > 1:
             self.current_floor -= 1
             self.get_number_of_floor(self.current_floor)
         else:
