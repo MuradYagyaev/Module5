@@ -101,20 +101,6 @@ class UrTube:
                             print('Вам нет 18 лет, пожалуйста покиньте страницу')
                     return
             print('Нет такого видео!')
-        # if self.current_user is not None:
-        #     for video in self.videos:
-        #         if video.title == title_:
-        #             if video.adult_mode:
-        #                 if self.current_user.age > 18:
-        #                     video.video_watch()
-        #                 else:
-        #                     print('Вам нет 18 лет, пожалуйста покиньте страницу')
-        #             else:
-        #                 video.video_watch()
-        #             return
-        #     print('Нет такого видео!')
-        # else:
-        #     print('Войдите в аккаунт чтобы смотреть видео')
 
 
 ur = UrTube()
